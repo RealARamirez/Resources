@@ -1,13 +1,4 @@
-# From the first file
-def float_tester(arg):
-    NumArg = str(arg).strip(" ").strip("\t")
-    for elem in NumArg.split("."):
-        if elem.isdigit():
-            Answer = True
-        else:
-            Answer = False
-            break
-    return Answer
+from float_tester import float_tester
 # Calculate the average of a given list avoiding the elements that cannot be converted into a float
 def average(arg):
     a = 0
@@ -37,5 +28,3 @@ def median(arg):
     else:
         Sol = b
     return Sol
-
-
